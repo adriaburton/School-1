@@ -2,8 +2,14 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
 }
-
+:root {
+  --main-bg-color: rgb(74, 74, 74);
+  --light-gray-color: rgb(208, 206, 206);
+  --white-color: white;
+}
 /*////////////// - NAV - ////////////////////*/
 
 .nav-container {
@@ -25,20 +31,20 @@ body {
 .bold {
   font-size: 24px;
   font-weight: bold;
-  color: rgb(22, 22, 22);
+  color: var(--main-bg-color);
 }
 
 .fine {
   font-size: 24px;
   font-weight: 500;
-  color: rgb(153, 151, 151);
+  color: var(--light-gray-color);
 }
 
 /*////////////// - LINKS - ////////////////////*/
 
 .links-container {
   width: 100%;
-  margin-right: 8px;
+  margin-right: 32px;
   display: flex;
   align-items: center;
   justify-content: right;
@@ -50,8 +56,57 @@ a {
   text-decoration: none;
   margin-right: 16px;
   font-size: 16px;
-  color: rgb(22, 22, 22);
+  color: var(--main-bg-color);
 }
 
+/*/ ///////////// - BANNER - ////////////////////*/
 
-/*/ ///////////// - LINKS - ////////////////////*/
+.main-banner {
+  width: 100%;
+  height: auto;
+  background-color: var(--light-gray-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+  display: flex;
+}
+.banner {
+  width: 60%;
+  height: auto;
+}
+.call-to-action {
+  color: var(--main-bg-color);
+  padding-left: 24px;
+}
+.call-to-action h2 {
+  padding-top: 125px;
+
+  font-size: 60px;
+  color: var(--main-bg-color);
+}
+.call-to-action p {
+  font-size: 32px;
+  line-height: 1.6;
+  font-weight: 550;
+}
+button {
+  width: 100%;
+  height: auto;
+  margin-top: 35px;
+  padding: 14px 0;
+  font-size: 30px;
+  color: var(--white-color);
+  background-color: var(--main-bg-color);
+  border: none;
+}
+
+/*/ ///////////// - INFORMATION - ////////////////////*/
+
+.main-information {
+  width: 100%;
+  height: auto;
+  background-color: var(--white-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+}
