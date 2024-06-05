@@ -1,0 +1,57 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*////////////// - NAV - ////////////////////*/
+
+.nav-container {
+  display: flex;
+  width: 100%;
+  height: 64px;
+}
+/*/ ///////////// - LOGO - ////////////////////*/
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  width: 34px;
+  padding-left: 24px;
+}
+
+.bold {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(22, 22, 22);
+}
+
+.fine {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(153, 151, 151);
+}
+
+/*////////////// - LINKS - ////////////////////*/
+
+.links-container {
+  width: 100%;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  margin-right: 16px;
+  font-size: 16px;
+  color: rgb(22, 22, 22);
+}
+
+
+/*/ ///////////// - LINKS - ////////////////////*/
